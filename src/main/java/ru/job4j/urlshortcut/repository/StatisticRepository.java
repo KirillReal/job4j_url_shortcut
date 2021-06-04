@@ -5,6 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 import ru.job4j.urlshortcut.model.Statistic;
 
 public interface StatisticRepository extends CrudRepository<Statistic, Long> {
-    @Query(value = "call update statistic(:urlId);", nativeQuery = true)
+
+    @Query(value = "select updateStatistic(:urlId);", nativeQuery = true)
     void callProcedureIncrementColumn(Long urlId);
 }

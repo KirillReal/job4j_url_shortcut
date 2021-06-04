@@ -22,7 +22,6 @@ import java.util.Objects;
 @ToString
 @Builder
 public class Url {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

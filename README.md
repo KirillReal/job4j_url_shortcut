@@ -65,3 +65,5 @@ HTTP CODE - 302 REDIRECT URL
 
 GET /statistic Ответ от сервера JSON.
 ![image](Screen/statistic.png)
+=======
+
